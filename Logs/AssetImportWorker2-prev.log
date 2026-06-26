@@ -1,0 +1,1397 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.12f1 (fca03ac9b0d5) revision 16556090'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) Professional' Language: 'ru' Physical Memory: 14188 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Alexa" at "2026-06-26T15:00:21.3665823Z"
+Date: 2026-06-26T15:00:21Z
+
+COMMAND LINE ARGUMENTS:
+E:\Unity Projects\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+E:/Unity Projects/ProjectThirdPerson
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+59186
+-licensingIpc
+LicenseClient-Alexa
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: E:/Unity Projects/ProjectThirdPerson
+E:/Unity Projects/ProjectThirdPerson
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [22532]  Target information:
+
+Player connection [22532]  * "[IP] 192.168.0.6 [Port] 0 [Flags] 2 [Guid] 35308770 [EditorId] 35308770 [Version] 1048832 [Id] WindowsEditor(7,AlexPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [22532] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22532] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.12f1 (fca03ac9b0d5)
+[Subsystems] Discovering subsystems at path E:/Unity Projects/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity Projects/ProjectThirdPerson/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3965 MB
+    Driver:   32.0.15.9159
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Initialize mono
+Mono path[0] = 'E:/Unity Projects/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity Projects/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity Projects/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity Projects/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002146 seconds.
+- Loaded All Assemblies, in  0.581 seconds
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Alexa"
+[Licensing::IpcConnector] LicenseClient-Alexa channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Alexa-6000.3.12" at "2026-06-26T15:00:22.5407596Z"
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.567 seconds
+Domain Reload Profiling: 1149ms
+	BeginReloadAssembly (205ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (204ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (244ms)
+			TypeCache.Refresh (241ms)
+				TypeCache.ScanAssembly (221ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (568ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (512ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (74ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (189ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              ded7212fd39b42b2818919f390cf82e3
+  Correlation Id:          c9c716caede40aea298576e0bcbb93c5
+  External correlation Id: 7784741526871710794
+  Machine Id:              Qp+mCXmKQQ1OpUbnaydOskclYG8=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Alexa-6000.3.12" (connect: 0.00s, validation: 0.00s, handshake: 1.07s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Alexa-6000.3.12-notifications" at "2026-06-26T15:00:23.6102483Z"
+[Licensing::Module] Licensing Background thread has ended after 2.24s
+[Licensing::Module] Licensing is initialized (took 0.49s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-UZZV-Y7EK-KJ6K-N2EM-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971769850360-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  0.862 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.452 seconds
+Domain Reload Profiling: 1313ms
+	BeginReloadAssembly (754ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (18ms)
+		LoadAssemblies (164ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (452ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (325ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (151ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (30.8 KB). Loaded Objects now: 702.
+Memory consumption went from 65.1 MB to 65.1 MB.
+Total: 8.202000 ms (FindLiveObjects: 0.121400 ms CreateObjectMapping: 0.020100 ms MarkObjects: 7.899800 ms  DeleteObjects: 0.158800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2049333.375519 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/L.png
+  artifactKey: Guid(49d08027cbe75de42b89534b25c55756) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/L.png using Guid(49d08027cbe75de42b89534b25c55756) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '214d3f7637db1eeceee85c37521fd93e') in 0.178201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/Premium.png
+  artifactKey: Guid(d02bde49b24a7b04a953a1235c774899) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/Premium.png using Guid(d02bde49b24a7b04a953a1235c774899) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbc5791c8bd3621a5bd4f0a472130d1c') in 0.0184294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/MAIL.png
+  artifactKey: Guid(8ea3286de4034d248abd95426e76e82d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/MAIL.png using Guid(8ea3286de4034d248abd95426e76e82d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '51e386b3e64a6189bd4985ccd9161f3c') in 0.0151083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/right-1.png
+  artifactKey: Guid(79d95b762b6d7ac49b8fb4ea945223ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/right-1.png using Guid(79d95b762b6d7ac49b8fb4ea945223ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '39ea4bc5f27cb27ea5963bf402eb82a0') in 0.015359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '293b753871be5924c91a0c300cfd3c64') in 0.0132998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Prefabs/Slider.prefab
+  artifactKey: Guid(d5e864b72e155594488ab80710322aa2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Prefabs/Slider.prefab using Guid(d5e864b72e155594488ab80710322aa2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ecd3e5726098146762da6a1dd78c4b0b') in 0.0244724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/underscore.png
+  artifactKey: Guid(f9a4200f282a30545a49abf67b32a46c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/underscore.png using Guid(f9a4200f282a30545a49abf67b32a46c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eddb0a4edc519763773f21757b64ec98') in 0.0138684 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/9.png
+  artifactKey: Guid(fb9a17bcd68d1cc4ea73365434676bdf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/9.png using Guid(fb9a17bcd68d1cc4ea73365434676bdf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3097cbdfa5c170840a037594395d4867') in 0.0148067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/128x128/button_gray_default_1.png
+  artifactKey: Guid(0883c5875873cd94ca995e1fa4a6687d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/128x128/button_gray_default_1.png using Guid(0883c5875873cd94ca995e1fa4a6687d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e795cd2633bfcb172ad6a5d0ea75bfd') in 0.0145372 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/mouseRightClick.png
+  artifactKey: Guid(badf853f2d4ff074aa3762860e12615a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/mouseRightClick.png using Guid(badf853f2d4ff074aa3762860e12615a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '201bfeeb03e672315505dd1e42e4f6c9') in 0.0152003 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scripts/SaveSystem/SaveData.cs
+  artifactKey: Guid(ca1293941576ff44aa19f3e2e977136a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/SaveSystem/SaveData.cs using Guid(ca1293941576ff44aa19f3e2e977136a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91ce8bb71d54a5c6d753e5af68366e03') in 0.0095706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/button_green_pressed_2.png
+  artifactKey: Guid(7f85979030a88974992ae57906f3b04a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/button_green_pressed_2.png using Guid(7f85979030a88974992ae57906f3b04a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7cbc6ee849db161fa7cc892d0fdc48e0') in 0.0154802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scripts/InputSystem/InputManager.cs
+  artifactKey: Guid(05002d1155ce5224da626b2f6d11ba65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/InputSystem/InputManager.cs using Guid(05002d1155ce5224da626b2f6d11ba65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ff5cd399bc0c30b6ea0d43b7d57f01f4') in 0.0103894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Ps5/Down.png
+  artifactKey: Guid(d0b97318f0861a245805854fbfe05307) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Ps5/Down.png using Guid(d0b97318f0861a245805854fbfe05307) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '32cbadaf2e28172408ac22fb977cb5ad') in 0.0170908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/b.png
+  artifactKey: Guid(5d44df3f3c6042c43ab7f7c1b928c576) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/b.png using Guid(5d44df3f3c6042c43ab7f7c1b928c576) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47767435a6b9d879bb2845cab146c43b') in 0.0142059 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/v.png
+  artifactKey: Guid(1f921a96297a79d479e61f02dc360fa7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/v.png using Guid(1f921a96297a79d479e61f02dc360fa7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72194d0e99f9ca841e06c7657c214cd3') in 0.0156871 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/f6.png
+  artifactKey: Guid(9ac9bc27005e4d945946e78cea53cc47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/f6.png using Guid(9ac9bc27005e4d945946e78cea53cc47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '44fef33e1aa410655e624ff0124e2651') in 0.0144841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/1.png
+  artifactKey: Guid(ab67529c6e488c242ba7ec078cc1475b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/1.png using Guid(ab67529c6e488c242ba7ec078cc1475b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '81f45f3c346105398cab272f9c9f4264') in 0.0161207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/GIFT.png
+  artifactKey: Guid(0820147de71566044baf06d19baf390f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/GIFT.png using Guid(0820147de71566044baf06d19baf390f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '66643f61dd52ea04d5abde2456aacba6') in 0.014724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/zoom-out.png
+  artifactKey: Guid(3714c11502fd74b4f9cbcc4f5fc0a996) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/zoom-out.png using Guid(3714c11502fd74b4f9cbcc4f5fc0a996) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb41ad79b92240f8967e51db0436349a') in 0.0144041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/20.png
+  artifactKey: Guid(ed59acbc9c67fc04e84e3f8af538809a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/20.png using Guid(ed59acbc9c67fc04e84e3f8af538809a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9bc2b8d11f2349b10a3307511626ee97') in 0.0152903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold 2/SOUND-OFF.png
+  artifactKey: Guid(d6826d8a057adcc4fa4052a0fa5b0faf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold 2/SOUND-OFF.png using Guid(d6826d8a057adcc4fa4052a0fa5b0faf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20074fe49897786b8b24d1866afa0e91') in 0.0143651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7dac4bd9b6d32b2d6ccaa9623755d18f') in 0.0104434 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/Y.png
+  artifactKey: Guid(ba230086bab5dbe4d90662a876c15cca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/Y.png using Guid(ba230086bab5dbe4d90662a876c15cca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '443c025cf12aedd0dedf616869cf1682') in 0.0164609 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/tilde.png
+  artifactKey: Guid(a7b80fc48955fe44aa5fcc20f83f4df3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/tilde.png using Guid(a7b80fc48955fe44aa5fcc20f83f4df3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8b1f7b3f19a7007833cc4e99442f8ef') in 0.0160107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/0.png
+  artifactKey: Guid(df1900426a049644991f8234bea5ade4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/0.png using Guid(df1900426a049644991f8234bea5ade4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c959ffe7a44474bf2a28d170f61f0bae') in 0.0160677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/MUSIC-OFF-1.png
+  artifactKey: Guid(24f92affab7e8724789ff8c0e8c61381) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/MUSIC-OFF-1.png using Guid(24f92affab7e8724789ff8c0e8c61381) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '34527b0162e1c7ec298c680682caaa61') in 0.0179354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/yellow-button-round.png
+  artifactKey: Guid(7c30f008346ca864489cd65f7aa68686) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/yellow-button-round.png using Guid(7c30f008346ca864489cd65f7aa68686) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '94b231f1c89c15ecb5b68eead89a3a5c') in 0.0174998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/LUp.png
+  artifactKey: Guid(e2067342a9aa1144387179cdb4f37e64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/LUp.png using Guid(e2067342a9aa1144387179cdb4f37e64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '725f5fba814073e52715d3d4c61be42a') in 0.0147554 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/9.png
+  artifactKey: Guid(f64d497e82290c74a96dfe8b595ba802) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/9.png using Guid(f64d497e82290c74a96dfe8b595ba802) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '231ccc65da6d8381581381492fc405d6') in 0.019116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/ı.png
+  artifactKey: Guid(fd315cf46e721e347865547e8ffc15bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/ı.png using Guid(fd315cf46e721e347865547e8ffc15bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54b7711f8376a82c05210fdf4d62ecac') in 0.0153676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold 2/ADD-PEOPE1-.png
+  artifactKey: Guid(1c8bc87e6c67c544f8de8a22eb44bd60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold 2/ADD-PEOPE1-.png using Guid(1c8bc87e6c67c544f8de8a22eb44bd60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43f83e7cbac769c92b8e813ffa02bd47') in 0.0249283 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scripts/Services/Platform/Interfaces
+  artifactKey: Guid(d8d70cb6599bf4e4ea475c97726e462e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/Services/Platform/Interfaces using Guid(d8d70cb6599bf4e4ea475c97726e462e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ff974f4765ab63501bc04e4d7be18ccf') in 0.0101375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/24.png
+  artifactKey: Guid(5ba5fa3396cb5c1498e81842cabb8686) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/24.png using Guid(5ba5fa3396cb5c1498e81842cabb8686) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8fed23199d30b85740118722bb864ded') in 0.0156789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/Zenject/Source/Binding/Binders/Factory/FactoryToChoiceIdBinder
+  artifactKey: Guid(9501dd1b3f5612d498ad453d3d6bc4c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Plugins/Zenject/Source/Binding/Binders/Factory/FactoryToChoiceIdBinder using Guid(9501dd1b3f5612d498ad453d3d6bc4c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '315c8fda941f502f81a19d0ed2fd8da7') in 0.011309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+  artifactKey: Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader using Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3aad08bdfbb6aa86c14f7afd714f20cc') in 0.0156379 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.json
+  artifactKey: Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.json using Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd571e1b23890cec2a5e486a3e7fa7979') in 0.0109096 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/slider_background_2.png
+  artifactKey: Guid(da657823a27fce44aacc30bef734d07e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/slider_background_2.png using Guid(da657823a27fce44aacc30bef734d07e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bea79897126481ecfab0eb912ce9be59') in 0.0177292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/10.png
+  artifactKey: Guid(c626362ae451e544c8a1c64f37dee89e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/10.png using Guid(c626362ae451e544c8a1c64f37dee89e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '717db8dacae902455db360b371b2bcee') in 0.0156853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Aztech Games
+  artifactKey: Guid(900beca6e06b2d747adc7cb201ea2b96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games using Guid(900beca6e06b2d747adc7cb201ea2b96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2816656fd98471b6ca0ac5cac713a9f') in 0.0109885 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/26.png
+  artifactKey: Guid(1f7357f661783d24981c268d52654ad7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/26.png using Guid(1f7357f661783d24981c268d52654ad7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c1c12c59b2d779724c4300b7f5ac61b9') in 0.0149392 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/ampersand.png
+  artifactKey: Guid(158c72f8dc13e5549aceb281f8f9a310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/ampersand.png using Guid(158c72f8dc13e5549aceb281f8f9a310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e19c6b5a95353474166531604910e53c') in 0.0142964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/arrowL.png
+  artifactKey: Guid(b463520278198664793d67355838e1a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/arrowL.png using Guid(b463520278198664793d67355838e1a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b419437dd0a62b464321c2b0420593ab') in 0.0187865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/quetion.png
+  artifactKey: Guid(5341b9d179f1948418f83a4ff39c1a18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/quetion.png using Guid(5341b9d179f1948418f83a4ff39c1a18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e7b53efd20bcfff036a2a379c46f4f8a') in 0.0155293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/2.png
+  artifactKey: Guid(424def0d77e493a4fb8c7a539ffd48e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/2.png using Guid(424def0d77e493a4fb8c7a539ffd48e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '26d2f0e64d53f30ea400ba1cc9b14882') in 0.0148372 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/22.png
+  artifactKey: Guid(8ad830042a731974e8029656b0d07027) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/22.png using Guid(8ad830042a731974e8029656b0d07027) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '198f3b22c41a4d1245038448b998fa74') in 0.0157028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scripts/InputSystem/InputActions.inputactions
+  artifactKey: Guid(452cbdd4e501a204e9b98d8597a94354) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/InputSystem/InputActions.inputactions using Guid(452cbdd4e501a204e9b98d8597a94354) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '989a038559c9555783823c592280b13d') in 0.0098761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/3.png
+  artifactKey: Guid(2b52df94afbee9d4d9b8232d50946fd7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/3.png using Guid(2b52df94afbee9d4d9b8232d50946fd7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5cb68407654852ca8ed8014f9cc66487') in 0.0150736 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/TextMesh Pro/Sprites
+  artifactKey: Guid(c188392c58bd05e469717e938170d5c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Sprites using Guid(c188392c58bd05e469717e938170d5c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c57448629e332c77c71464d39b57e23f') in 0.010632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/asteriks.png
+  artifactKey: Guid(ca1e28a7af183354cbb75022e75403b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/asteriks.png using Guid(ca1e28a7af183354cbb75022e75403b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91bfaeaee2fc553e7277177b445327a0') in 0.0145701 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/green-button-round.png
+  artifactKey: Guid(7224f183b0242a54291f4aa5e7d6c864) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/green-button-round.png using Guid(7224f183b0242a54291f4aa5e7d6c864) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd3ed5b598a4396b2ba86df4606fb8598') in 0.0174989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/Down.png
+  artifactKey: Guid(4fb5e0e2795e1024f9ee34048830cbde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/Down.png using Guid(4fb5e0e2795e1024f9ee34048830cbde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd6be4d3a4788e372635cb34a3c8cb707') in 0.0147664 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/OK.png
+  artifactKey: Guid(661e7d71aab1625499693493bb403f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/OK.png using Guid(661e7d71aab1625499693493bb403f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00fe01c9abe2f9ab6a290d0e54c0a52d') in 0.017402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/k.png
+  artifactKey: Guid(2e92db978ff7be44cbf55738539fed72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/k.png using Guid(2e92db978ff7be44cbf55738539fed72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c9b6b4d6a09276684104747261456a4') in 0.0167557 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/d.png
+  artifactKey: Guid(1776ac41d91387546af27228e20643cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/d.png using Guid(1776ac41d91387546af27228e20643cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3f31f9438029463c53a0800aca270112') in 0.014276 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Ps5_White/Square.png
+  artifactKey: Guid(e548abf8c55eceb4ba0cba29656aaddf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Ps5_White/Square.png using Guid(e548abf8c55eceb4ba0cba29656aaddf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f26706353ed2d67dd29ab00427b4b09') in 0.0127265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/Services/Platform/DummyPlatformProvider.cs
+  artifactKey: Guid(5c333bb9f3b3987488f3f641b1b4e619) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/Services/Platform/DummyPlatformProvider.cs using Guid(5c333bb9f3b3987488f3f641b1b4e619) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ab3d199e9afbf266d9456694712f722') in 0.0112645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f315bde061f9aeb4fcbf18e7f6f92e96') in 0.018637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/arrowU.png
+  artifactKey: Guid(d676693fef6219b42a849bada33c528e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/arrowU.png using Guid(d676693fef6219b42a849bada33c528e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bfaa8e8dce1ed68d95e4f97a9478c40d') in 0.0156551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/h.png
+  artifactKey: Guid(1e24c7daeaf5ebc49b9c8eebfbe0fb1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/h.png using Guid(1e24c7daeaf5ebc49b9c8eebfbe0fb1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fe89452ca54383a339b6dc64972ee9cf') in 0.0145927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/2.png
+  artifactKey: Guid(a5d380ffd61ac7144baf72fd8cd2ce1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/2.png using Guid(a5d380ffd61ac7144baf72fd8cd2ce1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e42482d8b9b6b4b29e515bd5fe431ae6') in 0.0148835 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/panel_title_2.png
+  artifactKey: Guid(5d9423aa043d52545974fb6a201dec86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/panel_title_2.png using Guid(5d9423aa043d52545974fb6a201dec86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42ffafd437e436d156c16319a5171397') in 0.013745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/c.png
+  artifactKey: Guid(cfd17122cb1c62944afaee1b32bb201e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/c.png using Guid(cfd17122cb1c62944afaee1b32bb201e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8dbe8a6e9e76902240606dbcf4413d4d') in 0.0160907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/o.png
+  artifactKey: Guid(b978de9daa7062d4a9f708dbfbf190d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/o.png using Guid(b978de9daa7062d4a9f708dbfbf190d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '985a37cf073d49868b196ffa9f959092') in 0.0147275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/copy.png
+  artifactKey: Guid(7dba52f41bf4bfe4da19d66fbd8f52db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/copy.png using Guid(7dba52f41bf4bfe4da19d66fbd8f52db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f6eddb4e92dde8327d76f3c5233fa5e') in 0.0156913 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/f2.png
+  artifactKey: Guid(c675dd7407bc0cc4790011986574ef2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/f2.png using Guid(c675dd7407bc0cc4790011986574ef2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b99ed87dc3144e5a32411ac225e18da') in 0.0161609 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/6.png
+  artifactKey: Guid(0eda5e0ad7ff22645bfb1a3ce0b03e06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/6.png using Guid(0eda5e0ad7ff22645bfb1a3ce0b03e06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8f7ba766a1afa158135182dbf18fb312') in 0.0157448 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(c644e25f5292a614d83338115691aab6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes using Guid(c644e25f5292a614d83338115691aab6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '823a36f814243e9f4d6b6e5768104509') in 0.009382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/apostrophe.png
+  artifactKey: Guid(7d916f9640133b943a9c7584c9c6489a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/apostrophe.png using Guid(7d916f9640133b943a9c7584c9c6489a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7feb50fc3751365171746583a1ff86e') in 0.0169398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold
+  artifactKey: Guid(916775b425036544e8ab9dbfaacd3986) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold using Guid(916775b425036544e8ab9dbfaacd3986) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ebf1598348567410d5776a58e226d9c1') in 0.0117144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/RightLeft.png
+  artifactKey: Guid(57180e2ae2bb52b408d37417d3e71549) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/RightLeft.png using Guid(57180e2ae2bb52b408d37417d3e71549) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '52e1232bf47e148735673e8b21185b6b') in 0.016469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/button_yellow_default_2.png
+  artifactKey: Guid(202cca839338a4d49aa5db82c2459568) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/button_yellow_default_2.png using Guid(202cca839338a4d49aa5db82c2459568) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c150467e28b539f8b9d798b3aafff51e') in 0.0145649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold 2/STAR.png
+  artifactKey: Guid(d5a78730b9195aa4daee4fdd1355667f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold 2/STAR.png using Guid(d5a78730b9195aa4daee4fdd1355667f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70cdffe1c3709532cdbc2ee3dc9a967e') in 0.0148903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/COIN.png
+  artifactKey: Guid(cef88a77cfbfe044395b747f0483ca2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/COIN.png using Guid(cef88a77cfbfe044395b747f0483ca2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f5a81dcfd15252b9365c78d0409f4b2') in 0.0187625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/rec-blue.png
+  artifactKey: Guid(baafe8c7f6e1b5d449295e616f5ed5a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/rec-blue.png using Guid(baafe8c7f6e1b5d449295e616f5ed5a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c3d4063d33b22a07811f11852b903f0b') in 0.0161149 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/g.png
+  artifactKey: Guid(59e71e72b71de5d4daf28def2abce1da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/g.png using Guid(59e71e72b71de5d4daf28def2abce1da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cc1794b13e43d67514ee8a4ee7636797') in 0.0156489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scripts/SaveSystem/ISaveable.cs
+  artifactKey: Guid(220ec5ffd473f6649a3469ab9b162ba6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/SaveSystem/ISaveable.cs using Guid(220ec5ffd473f6649a3469ab9b162ba6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c7f9db094b8b6c34b5c02c0e8d73cf92') in 0.0098442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/DemoScene/FGDemoScene.unity
+  artifactKey: Guid(d057f42f12aa2094fac1748fecd84c83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/DemoScene/FGDemoScene.unity using Guid(d057f42f12aa2094fac1748fecd84c83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9075dceb5ed19d9ff923cbf76d4fea0b') in 0.0134527 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/7.png
+  artifactKey: Guid(afc70e2f210d74b49ac8768599b1d9fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/7.png using Guid(afc70e2f210d74b49ac8768599b1d9fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7427d764b2d1efc09455fcff948bc754') in 0.0168325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/quit.png
+  artifactKey: Guid(fbcf1035c82ef27439a625e1d816eae7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/quit.png using Guid(fbcf1035c82ef27439a625e1d816eae7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64d9b0f9066d4b23fe8346703f1b56f6') in 0.0170344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/right.png
+  artifactKey: Guid(c590893c4d9e0d6448a8549dc6c627ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/right.png using Guid(c590893c4d9e0d6448a8549dc6c627ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '525b258e73eaafadffdca6de032de2de') in 0.0173495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3df9b8d9214f26c8086b828d4bd7538a') in 0.0264021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Scripts/SaveSystem/ISaveStorage.cs
+  artifactKey: Guid(df4f927e1c180f04daad505c1c6caeaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/SaveSystem/ISaveStorage.cs using Guid(df4f927e1c180f04daad505c1c6caeaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33eab6cb29520f87cdcb8720f4e6bb9f') in 0.0106974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/exclamation.png
+  artifactKey: Guid(47414c149dab69648957365eac0ba022) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/exclamation.png using Guid(47414c149dab69648957365eac0ba022) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a1ad7d9ec8699e2f3db7aa94e341199') in 0.015294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/f3.png
+  artifactKey: Guid(76d09856e387ade4ab2e137489264e41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/f3.png using Guid(76d09856e387ade4ab2e137489264e41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab8cca04de49a018fb6d8d019fc5cd8f') in 0.0155057 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/f7.png
+  artifactKey: Guid(f1cc6b83086b0d84d8835927ff2f73a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/f7.png using Guid(f1cc6b83086b0d84d8835927ff2f73a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3e976ffae5f86180aa75e2bdd9583c1') in 0.0156915 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/edit.png
+  artifactKey: Guid(48f6a4311087aad438253ce99ee2d041) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/edit.png using Guid(48f6a4311087aad438253ce99ee2d041) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42bf11c0f6884fad49cfdfdcbe2533d1') in 0.0170829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/tab.png
+  artifactKey: Guid(2dd80df457af2a3459331bbc6d85918f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/tab.png using Guid(2dd80df457af2a3459331bbc6d85918f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7dc02bc1030a897523d2f2658246764e') in 0.0145459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/Up.png
+  artifactKey: Guid(750804e7401f77340acde030932c1620) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/Up.png using Guid(750804e7401f77340acde030932c1620) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd1d1d702bcbc0879b76f316ba8d4510b') in 0.0162587 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Ps5_White/L2.png
+  artifactKey: Guid(5b012a2312f1e4b4eaa4158086ecd44e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Ps5_White/L2.png using Guid(5b012a2312f1e4b4eaa4158086ecd44e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67de1112983d01adb429abb101fe76c2') in 0.0172006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  artifactKey: Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt using Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd07a01f9f6d95bc0834fea94c5e504d9') in 0.0103181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/UNLOCK.png
+  artifactKey: Guid(d1138abb2f63da44c94a425092b1cc99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/UNLOCK.png using Guid(d1138abb2f63da44c94a425092b1cc99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '444e16c03bfb5d8c10c62edf821cf997') in 0.0138662 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/unlock.png
+  artifactKey: Guid(bf4acbfe51b1a624cb24c245a3536008) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/unlock.png using Guid(bf4acbfe51b1a624cb24c245a3536008) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '420042de788305d1030a1180989779de') in 0.0141461 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/u.png
+  artifactKey: Guid(b221e0749574bc14b9106d0574fce65d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/u.png using Guid(b221e0749574bc14b9106d0574fce65d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c5d30fa877023fe80fec8608ff03b46') in 0.0148898 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/dollar.png
+  artifactKey: Guid(197208206283f41469e214aeb39f186a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/dollar.png using Guid(197208206283f41469e214aeb39f186a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3964b8161462a24dc41976482e2c2c0') in 0.0133841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/rectangle-grey.png
+  artifactKey: Guid(b0bc76623f5b8eb4ab77d39869d1b601) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/rectangle-grey.png using Guid(b0bc76623f5b8eb4ab77d39869d1b601) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8069a58d9363f63bbbfead2f0836af91') in 0.0146048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/squarebracketR.png
+  artifactKey: Guid(11b9829c058f394488cba10492d254e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/squarebracketR.png using Guid(11b9829c058f394488cba10492d254e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f8db85d6179a976d2eb38d5e9a29cfc') in 0.0142167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/w.png
+  artifactKey: Guid(5383ea93539c16e478800c76137bd582) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/w.png using Guid(5383ea93539c16e478800c76137bd582) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24b111b26372c86ad1d4e0ab8eae732f') in 0.0171894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/128x128/icon_bread_1.png
+  artifactKey: Guid(73e2a05c61e022847b8c16bbb41024e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/128x128/icon_bread_1.png using Guid(73e2a05c61e022847b8c16bbb41024e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '296a46320f0d7c665fddc392d479303c') in 0.0151617 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold 2/PHOTO1.png
+  artifactKey: Guid(3fba2429e5e960045894f6d82708f530) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold 2/PHOTO1.png using Guid(3fba2429e5e960045894f6d82708f530) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55a84a6ac328fc94104513c505b1eda4') in 0.0211874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras
+  artifactKey: Guid(1a01caea66b266546925752d6019cbb2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Examples & Extras using Guid(1a01caea66b266546925752d6019cbb2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e73ae592cbbe2bfa1c22c1c0deb8dcb') in 0.0096637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/LDown.png
+  artifactKey: Guid(29b74ffaa5940ac4a8af941c88677e5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/LDown.png using Guid(29b74ffaa5940ac4a8af941c88677e5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f18952e5b6cd3d0efab884b09b9a6614') in 0.0176937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/pageDown.png
+  artifactKey: Guid(ddb40842c01d218438ead0cd335ed047) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/pageDown.png using Guid(ddb40842c01d218438ead0cd335ed047) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7216c7412109eac1f5dcd20bf7b240ac') in 0.0147809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold 2/UNLOCK-1.png
+  artifactKey: Guid(aa0d6271a3b7d814c87c5c9b534bfef8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold 2/UNLOCK-1.png using Guid(aa0d6271a3b7d814c87c5c9b534bfef8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be78fbf902ad8c4d93c3dfee20c1e97c') in 0.0194128 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/rmove-people.png
+  artifactKey: Guid(8938bf4730a132e4b91df4d2abfe4184) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/rmove-people.png using Guid(8938bf4730a132e4b91df4d2abfe4184) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e7ac949ad9f687e86818e4f910611b52') in 0.017222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold 2/CLOSE.png
+  artifactKey: Guid(d0b261188ad98cd4dbc0fb258dc7e6df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold 2/CLOSE.png using Guid(d0b261188ad98cd4dbc0fb258dc7e6df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5c6ec41029d3af914fd9bc6af40b89d') in 0.0158288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/t.png
+  artifactKey: Guid(653a1936dc0423f479a5c96b6fd1182a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/t.png using Guid(653a1936dc0423f479a5c96b6fd1182a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '259690ab4a5ffd853950e6745f62d981') in 0.0149474 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/esc.png
+  artifactKey: Guid(014ccd279f54c0848a76145ace827575) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/esc.png using Guid(014ccd279f54c0848a76145ace827575) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3ad96223bcd2752ee115a5a85ea9da48') in 0.0164293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/buttons/rec-red.png
+  artifactKey: Guid(dd0761b39b7aa3845bb99cd61be42097) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/buttons/rec-red.png using Guid(dd0761b39b7aa3845bb99cd61be42097) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0ee2ead8cd0183b575ee39e6cd9c890a') in 0.0165649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/colon.png
+  artifactKey: Guid(57f517df2b54ec64ea9382cbeb84878e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/colon.png using Guid(57f517df2b54ec64ea9382cbeb84878e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b946fd3ce74f2a2f105d7cb7069fb4f') in 0.0155831 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/MINUS 1.png
+  artifactKey: Guid(b4f7b320fd29f0648a936c389943a5f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/MINUS 1.png using Guid(b4f7b320fd29f0648a936c389943a5f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '843be8369080322803cf61ff42ef1d34') in 0.0169831 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+  artifactKey: Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader using Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b244684805114bb781715f9e57db44e') in 0.0117016 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/squarebracketL.png
+  artifactKey: Guid(d7f7fb2e4371b7b4db232da0f7b970bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/squarebracketL.png using Guid(d7f7fb2e4371b7b4db232da0f7b970bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '585e6ae676447ec93b9453fb1f22558c') in 0.0145927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/DynamicInputImage.cs
+  artifactKey: Guid(c3de84edee467744c8b20abce790380f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/DynamicInputImage.cs using Guid(c3de84edee467744c8b20abce790380f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12a63112287fee123267cf041d6daa03') in 0.0098007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/Left.png
+  artifactKey: Guid(d4678a8f6573d9b4e806329b57eec399) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/Left.png using Guid(d4678a8f6573d9b4e806329b57eec399) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e36d566952774967611204f4d4ff0c2') in 0.0172656 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/B.png
+  artifactKey: Guid(59b349dd83c4367478be54a8fd050ea0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole_White/B.png using Guid(59b349dd83c4367478be54a8fd050ea0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f2b521748e6653b60fefd60046adb980') in 0.0167075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/CART.png
+  artifactKey: Guid(4a29b2e9c039b934aa5287560b686782) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/CART.png using Guid(4a29b2e9c039b934aa5287560b686782) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5a1f5caae17d0e0b930d890ec672357') in 0.0171921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Prefabs/GreenBtn.prefab
+  artifactKey: Guid(adaa4a040c11d414c948362349441105) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Prefabs/GreenBtn.prefab using Guid(adaa4a040c11d414c948362349441105) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd47ea9e578c60c95330a92f9652697b5') in 0.014924 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/128x128/panel_title_1.png
+  artifactKey: Guid(a259cc0eb16d2ba4d918a83be309d721) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/128x128/panel_title_1.png using Guid(a259cc0eb16d2ba4d918a83be309d721) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9c8405d05fcf6788e5718caf1dfdf7dd') in 0.0157149 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Ps5/L2.png
+  artifactKey: Guid(f54f6580cc9b34d4c94bd4686f1e47c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Ps5/L2.png using Guid(f54f6580cc9b34d4c94bd4686f1e47c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '26c5c24bc4ad5af22f5c5c4fab083aec') in 0.0149088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/white icon/rewards.png
+  artifactKey: Guid(c5524708b49356c40ac4137488d2162e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/white icon/rewards.png using Guid(c5524708b49356c40ac4137488d2162e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db5553031603c0cd0cab6eb4298f73df') in 0.0146081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/button_green_default_2.png
+  artifactKey: Guid(8b572ed8117047647b2d3d47940bb1b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/maanetorn/Farm Game UI - Simple 2D UI/Sprites/256x256/button_green_default_2.png using Guid(8b572ed8117047647b2d3d47940bb1b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '30be95216839fb226c8795afff32b161') in 0.0155061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/colorX.png
+  artifactKey: Guid(8b2ade512af55494b9c7beef58de1b49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/colorX.png using Guid(8b2ade512af55494b9c7beef58de1b49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '608afbab51f9fd8ca41bd6121cf5a5da') in 0.0145887 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold/INFO-1.png
+  artifactKey: Guid(ee26899a94efd9944bc3c545aefdaa7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold/INFO-1.png using Guid(ee26899a94efd9944bc3c545aefdaa7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e89699cc76045cb994e304d43d7e7a33') in 0.0151747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/x.png
+  artifactKey: Guid(3441a18f06609f34099bceb06525484b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard/x.png using Guid(3441a18f06609f34099bceb06525484b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5649340290ffb9af9017295770f07e47') in 0.0142117 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/RUp.png
+  artifactKey: Guid(d7a90adec3299df46aa1bc349afba4d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/XConsole/RUp.png using Guid(d7a90adec3299df46aa1bc349afba4d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43b7591d735e4f795eca1988b0bd5263') in 0.0154239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/f10.png
+  artifactKey: Guid(67bfe0c0ff57050439f753015a3444e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Aztech Games/PC&ConsoleButtonsIcons/Keyboard_White/f10.png using Guid(67bfe0c0ff57050439f753015a3444e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5b7e02c351680b7045b8b51fc1806cc4') in 0.0145547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Saurabh_Studio/Ui button pack 6/gold 2/ACHIV-1.png
+  artifactKey: Guid(30c599fc39efebe4e84baeac2b6ac020) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Saurabh_Studio/Ui button pack 6/gold 2/ACHIV-1.png using Guid(30c599fc39efebe4e84baeac2b6ac020) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1efd24752996dc336daf1a5e328d92a9') in 0.0196028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(c9fe4a9b9b447d843be7267ce994a21a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Plugins using Guid(c9fe4a9b9b447d843be7267ce994a21a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b01a99f42d27bb1e04c9d6c9c3cbbacf') in 0.0091351 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/TextMesh Pro/Fonts
+  artifactKey: Guid(9af84baa54e8c494ba5b5ba68492f7e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Fonts using Guid(9af84baa54e8c494ba5b5ba68492f7e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd3b079df60543ffd8c8cd8fca38f638c') in 0.008206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 509 unused Assets / (57.5 KB). Loaded Objects now: 1119.
+Memory consumption went from 68.8 MB to 68.7 MB.
+Total: 5.606800 ms (FindLiveObjects: 0.112100 ms CreateObjectMapping: 0.028100 ms MarkObjects: 5.319100 ms  DeleteObjects: 0.145900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-UZZV-Y7EK-KJ6K-N2EM-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971769850360-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  0.319 seconds
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.395 seconds
+Domain Reload Profiling: 713ms
+	BeginReloadAssembly (187ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (43ms)
+		LoadAssemblies (115ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (15ms)
+			BuildScriptInfoCaches (6ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (395ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (300ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (164ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 0.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 862 unused Assets / (173.0 KB). Loaded Objects now: 1472.
+Memory consumption went from 71.3 MB to 71.2 MB.
+Total: 4.518900 ms (FindLiveObjects: 0.128100 ms CreateObjectMapping: 0.038400 ms MarkObjects: 4.091900 ms  DeleteObjects: 0.259900 ms)
+
+Prepare: number of updated asset objects reloaded= 0

@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Menu Labels_ro
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: ro
+  m_SharedData: {fileID: 11400000, guid: 038be2f5d804ee14c83cf998ce1ae3b3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 49634832384
+    m_Localized: "Continu\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1451983597568
+    m_Localized: Joc nou
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1633085255680
+    m_Localized: "Op\u021Biuni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1728354676736
+    m_Localized: "Ie\u0219ire"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1876665266176
+    m_Localized: Meniu Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145587261440
+    m_Localized: "Balan\u021B\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2265598881792
+    m_Localized: "Rezisten\u021B\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2336381956096
+    m_Localized: Confirmi joc nou?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2521438842880
+    m_Localized: "Dac\u0103 confirmi, toate salv\u0103rile vor fi \u0219terse \u0219i
+      jocul va \xEEncepe de la \xEEnceput."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2707447836672
+    m_Localized: "Nu ai suficient\u0103 balan\u021B\u0103 (5)!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2843406200832
+    m_Localized: "Cre\u0219te daunele"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2986721374208
+    m_Localized: "Cre\u0219te balan\u021Ba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2988411678720
+    m_Localized: "Reseteaz\u0103 rezisten\u021Ba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24834972545024
+    m_Localized: da
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25233435619328
+    m_Localized: nu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25563611230208
+    m_Localized: "Op\u021Biuni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25973298262016
+    m_Localized: sunet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26173391728640
+    m_Localized: Calitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26453554458624
+    m_Localized: "Limb\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26736619646976
+    m_Localized: Meniu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27579007856640
+    m_Localized: "Pauz\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28427368755200
+    m_Localized: "Confirm\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28619828588544
+    m_Localized: "\xCEnapoi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28899727077376
+    m_Localized: "ie\u0219ire"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120810445959168
+    m_Localized: "Interac\u021Biune"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123645183094784
+    m_Localized: "Salut! Aceasta este scena \xEEn care po\u021Bi testa mecanicile
+      jocului."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124325939605504
+    m_Localized: ok
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

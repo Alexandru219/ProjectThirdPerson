@@ -12,7 +12,7 @@ public class MenuController : MonoBehaviour
     private void Start()
     {
        // _firstSelectable = GetComponentInChildren<Selectable>().gameObject;
-
+      // EventSystem.current.SetSelectedGameObject(_firstSelectable);
     }
 
     private void OnEnable()

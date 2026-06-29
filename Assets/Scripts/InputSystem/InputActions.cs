@@ -138,18 +138,27 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Crouch"",
+                    ""name"": ""StartPauseMenu"",
                     ""type"": ""Button"",
-                    ""id"": ""c55097a6-a583-48b3-b895-c52a2031c6dc"",
+                    ""id"": ""50f4731a-bef3-4e28-88af-bb43638c2e03"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""StartPauseMenu"",
+                    ""name"": ""StartAttack"",
                     ""type"": ""Button"",
-                    ""id"": ""50f4731a-bef3-4e28-88af-bb43638c2e03"",
+                    ""id"": ""2edde802-af11-48ef-85e5-8f63ef0484ae"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interacting"",
+                    ""type"": ""Button"",
+                    ""id"": ""ebeabc8c-94cf-4ef1-9358-06388a3d31db"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -313,28 +322,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c395a617-8333-41a9-88c9-d4b229a9a287"",
-                    ""path"": ""<Gamepad>/leftStickPress"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Crouch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""701a77f2-bcd3-4144-b9eb-8faa2cb4b531"",
-                    ""path"": ""<Keyboard>/leftCtrl"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Crouch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""a58285d8-64a4-402d-9a81-6add2416b1bd"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
@@ -352,6 +339,50 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""StartPauseMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4b27d61f-7908-429b-8919-6ed16187bb45"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StartAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1911e2cb-3c4d-4ed8-ac0d-886ef4c97e8b"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StartAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a549f7ce-380d-4391-96d0-7c88270f72f6"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interacting"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""602bfb5c-70b2-42b7-bd9e-1cec320acada"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interacting"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -896,8 +927,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_Gameplay_Jump = m_Gameplay.FindAction("Jump", throwIfNotFound: true);
         m_Gameplay_Sprint = m_Gameplay.FindAction("Sprint", throwIfNotFound: true);
         m_Gameplay_Interact = m_Gameplay.FindAction("Interact", throwIfNotFound: true);
-        m_Gameplay_Crouch = m_Gameplay.FindAction("Crouch", throwIfNotFound: true);
         m_Gameplay_StartPauseMenu = m_Gameplay.FindAction("StartPauseMenu", throwIfNotFound: true);
+        m_Gameplay_StartAttack = m_Gameplay.FindAction("StartAttack", throwIfNotFound: true);
+        m_Gameplay_Interacting = m_Gameplay.FindAction("Interacting", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_StopPauseMenu = m_UI.FindAction("StopPauseMenu", throwIfNotFound: true);
@@ -995,8 +1027,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Jump;
     private readonly InputAction m_Gameplay_Sprint;
     private readonly InputAction m_Gameplay_Interact;
-    private readonly InputAction m_Gameplay_Crouch;
     private readonly InputAction m_Gameplay_StartPauseMenu;
+    private readonly InputAction m_Gameplay_StartAttack;
+    private readonly InputAction m_Gameplay_Interacting;
     /// <summary>
     /// Provides access to input actions defined in input action map "Gameplay".
     /// </summary>
@@ -1029,13 +1062,17 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Interact => m_Wrapper.m_Gameplay_Interact;
         /// <summary>
-        /// Provides access to the underlying input action "Gameplay/Crouch".
-        /// </summary>
-        public InputAction @Crouch => m_Wrapper.m_Gameplay_Crouch;
-        /// <summary>
         /// Provides access to the underlying input action "Gameplay/StartPauseMenu".
         /// </summary>
         public InputAction @StartPauseMenu => m_Wrapper.m_Gameplay_StartPauseMenu;
+        /// <summary>
+        /// Provides access to the underlying input action "Gameplay/StartAttack".
+        /// </summary>
+        public InputAction @StartAttack => m_Wrapper.m_Gameplay_StartAttack;
+        /// <summary>
+        /// Provides access to the underlying input action "Gameplay/Interacting".
+        /// </summary>
+        public InputAction @Interacting => m_Wrapper.m_Gameplay_Interacting;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1077,12 +1114,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
-            @Crouch.started += instance.OnCrouch;
-            @Crouch.performed += instance.OnCrouch;
-            @Crouch.canceled += instance.OnCrouch;
             @StartPauseMenu.started += instance.OnStartPauseMenu;
             @StartPauseMenu.performed += instance.OnStartPauseMenu;
             @StartPauseMenu.canceled += instance.OnStartPauseMenu;
+            @StartAttack.started += instance.OnStartAttack;
+            @StartAttack.performed += instance.OnStartAttack;
+            @StartAttack.canceled += instance.OnStartAttack;
+            @Interacting.started += instance.OnInteracting;
+            @Interacting.performed += instance.OnInteracting;
+            @Interacting.canceled += instance.OnInteracting;
         }
 
         /// <summary>
@@ -1109,12 +1149,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
-            @Crouch.started -= instance.OnCrouch;
-            @Crouch.performed -= instance.OnCrouch;
-            @Crouch.canceled -= instance.OnCrouch;
             @StartPauseMenu.started -= instance.OnStartPauseMenu;
             @StartPauseMenu.performed -= instance.OnStartPauseMenu;
             @StartPauseMenu.canceled -= instance.OnStartPauseMenu;
+            @StartAttack.started -= instance.OnStartAttack;
+            @StartAttack.performed -= instance.OnStartAttack;
+            @StartAttack.canceled -= instance.OnStartAttack;
+            @Interacting.started -= instance.OnInteracting;
+            @Interacting.performed -= instance.OnInteracting;
+            @Interacting.canceled -= instance.OnInteracting;
         }
 
         /// <summary>
@@ -1401,19 +1444,26 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInteract(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Crouch" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnCrouch(InputAction.CallbackContext context);
-        /// <summary>
         /// Method invoked when associated input action "StartPauseMenu" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnStartPauseMenu(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "StartAttack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnStartAttack(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Interacting" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnInteracting(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

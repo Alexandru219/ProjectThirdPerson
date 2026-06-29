@@ -1,14 +1,13 @@
 using UnityEngine;
 
-//[RequireComponent(typeof(FPSController))]
 public class InputController : MonoBehaviour
 {
-    private FPSController _fpsController;
+    private PlayerController _controller;
     private InputReaderNew _inputReader;
 
     private void Awake()
     {
-        _fpsController = GetComponent<FPSController>();
+        _controller = GetComponent<PlayerController>();
     }
 
     private void Start()
@@ -24,15 +23,12 @@ public class InputController : MonoBehaviour
 
         SubscribeToInput();
     }
-    
-    
 
     private void OnDestroy()
     {
         UnsubscribeFromInput();
     }
 
-    // ─── Input Subscriptions ──────────────────────────────────────────────────
 
     private void SubscribeToInput()
     {
@@ -41,113 +37,139 @@ public class InputController : MonoBehaviour
         _inputReader.OnJumpStarted += HandleJumpStarted;
         _inputReader.OnSprintStarted += HandleSprintStarted;
         _inputReader.OnSprintCanceled += HandleSprintCanceled;
+
         _inputReader.OnOpenUI += HandleUIOpened;
         _inputReader.OnCloseUI += HandleUIClosed;
-        _inputReader.OnCancelMenu += HandleUIBackMenu;
-        _inputReader.OnNextSchemeMenu += NextControlsMenu;
-        _inputReader.OnPreviousSchemeMenu += PreviousControlsMenu;
-        _inputReader.OnNavigateEvent += CheckNavigateUI;
-        _inputReader.OnInteractEvent += InteractEvent;
+
+        _inputReader.OnCancelMenu += HandleBackNavigation;
+        _inputReader.OnNextSchemeMenu += HandleNextScheme;
+        _inputReader.OnPreviousSchemeMenu += HandlePreviousScheme;
+
+        _inputReader.OnNavigateEvent += HandleNavigate;
+        _inputReader.OnInteractEvent += HandleInteract;
+
     }
 
     
 
-
     private void UnsubscribeFromInput()
     {
-        if (_inputReader == null) return;
+        if (_inputReader == null)
+            return;
 
         _inputReader.OnMoveEvent -= HandleMove;
         _inputReader.OnLookEvent -= HandleLook;
         _inputReader.OnJumpStarted -= HandleJumpStarted;
         _inputReader.OnSprintStarted -= HandleSprintStarted;
         _inputReader.OnSprintCanceled -= HandleSprintCanceled;
+
         _inputReader.OnOpenUI -= HandleUIOpened;
         _inputReader.OnCloseUI -= HandleUIClosed;
-        _inputReader.OnCancelMenu -= HandleUIBackMenu;
-        _inputReader.OnNavigateEvent -= CheckNavigateUI;
-        _inputReader.OnInteractEvent -= InteractEvent;
 
+        _inputReader.OnCancelMenu -= HandleBackNavigation;
+        _inputReader.OnNextSchemeMenu -= HandleNextScheme;
+        _inputReader.OnPreviousSchemeMenu -= HandlePreviousScheme;
+
+        _inputReader.OnNavigateEvent -= HandleNavigate;
+        _inputReader.OnInteractEvent -= HandleInteract;
+        
+        
     }
 
-    // Event Handlers 
-
-    private void HandleUIBackMenu()
+    private void StartAttack()
     {
-        if(PauseMenuController.Instance != null) PauseMenuController.Instance.HandleBackNavigation();
-        
-        if(MainMenuController.Instance != null) MainMenuController.Instance.HandleBackNavigation();
+        if (!_inputReader.IsGameplayActive)  return;
+            
+           // _controller.StartAttack();
     }
     
     private void HandleMove(Vector2 input)
     {
-        if (!_inputReader.IsGameplayActive) return;
-        _fpsController.SetMovementCommand(input);
-    }
-    
-    private void InteractEvent()
-    {
-        InteractionModule.Instance.StartInteraction();
+       // if (!_inputReader.IsGameplayActive)
+           // return;
+
+       // _controller.SetMoveInput(input);
     }
 
-    private void HandleLook(Vector2 delta)
+    private void HandleLook(Vector2 input)
     {
-        if (!_inputReader.IsGameplayActive) return;
-        _fpsController.ExecuteLook(delta);
-       // _fpsController.GamepadExecuteLook(delta);
+       // if (!_inputReader.IsGameplayActive)
+            return;
+
+       // _controller.ExecuteLook(input);
     }
 
     private void HandleJumpStarted()
     {
-        if (!_inputReader.IsGameplayActive) return;
-        _fpsController.ExecuteJump();
+        if (!_inputReader.IsGameplayActive)
+            return;
+
+       // _controller.Jump();
     }
 
     private void HandleSprintStarted()
     {
-        if (!_inputReader.IsGameplayActive) return;
-        _fpsController.SetSprintCommand(true);
+        if (!_inputReader.IsGameplayActive)
+            return;
+
+      //  _controller.SetSprint(true);
     }
 
     private void HandleSprintCanceled()
     {
-        _fpsController.SetSprintCommand(false);
-    }
-    
-    private void PreviousControlsMenu()
-    {
-       if(PauseMenuController.Instance != null) PauseMenuController.Instance.PreviousSchemeControls();
+       // _controller.SetSprint(false);
     }
 
-    private void NextControlsMenu()
+    private void HandleInteract()
     {
-        if(PauseMenuController.Instance != null) PauseMenuController.Instance.NextSchemeControls();
+        if (!_inputReader.IsGameplayActive)
+            return;
 
+        if (InteractionModule.Instance != null)
+            InteractionModule.Instance.StartInteraction();
     }
-    
-    private void CheckNavigateUI(Vector2 obj)
-    {
-        WindowManager.Instance.SelectFirst();
-    }
+
 
     private void HandleUIOpened()
     {
-        _fpsController.ResetMovementState();
-        //_fpsController.enabled = false; 
-
+       
+        
         if (PauseMenuController.Instance != null)
-        {
             PauseMenuController.Instance.OpenPauseMenu();
-        }
     }
 
     private void HandleUIClosed()
     {
-        _fpsController.enabled = true; 
-
+     
+        
         if (PauseMenuController.Instance != null)
-        {
             PauseMenuController.Instance.ClosePauseMenu();
-        }
+    }
+
+    private void HandleBackNavigation()
+    {
+        if (PauseMenuController.Instance != null)
+            PauseMenuController.Instance.HandleBackNavigation();
+
+        if (MainMenuController.Instance != null)
+            MainMenuController.Instance.HandleBackNavigation();
+    }
+
+    private void HandleNextScheme()
+    {
+        if (PauseMenuController.Instance != null)
+            PauseMenuController.Instance.NextSchemeControls();
+    }
+
+    private void HandlePreviousScheme()
+    {
+        if (PauseMenuController.Instance != null)
+            PauseMenuController.Instance.PreviousSchemeControls();
+    }
+
+    private void HandleNavigate(Vector2 value)
+    {
+        if (WindowManager.Instance != null)
+            WindowManager.Instance.SelectFirst();
     }
 }

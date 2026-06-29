@@ -22,7 +22,8 @@ public class InteractionModule : MonoBehaviour
     private float _interactionProgress;
     public UnityEvent<string> onInteractableHovered;
     public UnityEvent<float> onInteractProgressChanged;
-
+    [SerializeField] private TMPro.TextMeshProUGUI uiInteractionText;
+    [SerializeField] private GameObject interactionUI;
     private float InteractionProgress
     {
         get => _interactionProgress;
@@ -52,7 +53,11 @@ public class InteractionModule : MonoBehaviour
                 {
                     _currentInteractable.HoverStart();
                     _currentInteractable.OnInteractableDisabled += DisableInteractable;
-                    onInteractableHovered?.Invoke(_currentInteractable.message);
+                    //onInteractableHovered?.Invoke(_currentInteractable.message);
+
+                    uiInteractionText.text = _currentInteractable.GetLocalizedMessage();
+                    uiInteractionText.gameObject.SetActive(true);
+                    interactionUI.SetActive(true);
                 }
                 else
                 {

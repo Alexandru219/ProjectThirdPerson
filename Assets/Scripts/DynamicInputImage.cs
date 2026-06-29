@@ -37,12 +37,11 @@ public class DynamicInputImage : MonoBehaviour
     {
         if (deviceType == TrackerDeviceManager.DeviceType.Gamepad)
         {
-            // Verificăm sub-tipul de gamepad din manager
             if (TrackerDeviceManager.Instance.CurrentGamepadType == TrackerDeviceManager.GamepadType.PlayStation)
             {
                 if (playstationSprite != null) _targetImage.sprite = playstationSprite;
             }
-            else // Default la Xbox dacă e controller generic sau Xbox real
+            else 
             {
                 if (xboxSprite != null) _targetImage.sprite = xboxSprite;
             }

@@ -48,45 +48,74 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\InteractionSystem\Interactable.cs" />
-    <Compile Include="Assets\Scripts\InteractionSystem\InteractionUI.cs" />
     <Compile Include="Assets\Scripts\Window System\Menu\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\InputSystem\InputController.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\SaveableObject.cs" />
     <Compile Include="Assets\Scripts\DynamicInputImage.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\ISaveStorage.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\ISaveable.cs" />
-    <Compile Include="Assets\Scripts\InteractionSystem\InteractableTask.cs" />
+    <Compile Include="Assets\Scripts\Player\Input\PlayerActionsInput.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyRespawnManager.cs" />
     <Compile Include="Assets\Scripts\Window System\Menu\MenuSystem.cs" />
-    <Compile Include="Assets\Scripts\Window System\Menu\MainMenuController.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\SaveData.cs" />
-    <Compile Include="Assets\Saurabh_Studio\Ex Scene\CreateObj.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\LoadGame.cs" />
-    <Compile Include="Assets\Scripts\InteractionSystem\InteractionModule.cs" />
-    <Compile Include="Assets\Scripts\GameExit.cs" />
-    <Compile Include="Assets\Scripts\InteractionSystem\TestInteraction.cs" />
+    <Compile Include="Assets\Scripts\UI\PopupController.cs" />
+    <Compile Include="Assets\Scripts\UI\TutorialManager.cs" />
+    <Compile Include="Assets\Scripts\Player\CharacterControllerUtils.cs" />
+    <Compile Include="Assets\Scripts\Settings.cs" />
+    <Compile Include="Assets\Scripts\Player\Input\PlayerInputManager.cs" />
+    <Compile Include="Assets\Scripts\LoadScene\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\Player\ThirdPersonCameraController.cs" />
     <Compile Include="Assets\Scripts\InputSystem\InputReader.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\Example_HealthComponent.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Player\Input\ThirdPersonInput.cs" />
+    <Compile Include="Assets\Scripts\InputSystem\InputActions.cs" />
+    <Compile Include="Assets\Scripts\Audio\Sound.cs" />
+    <Compile Include="Assets\Scripts\SaveSystem\SaveManager.cs" />
+    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\DamagePopup.cs" />
+    <Compile Include="Assets\Scripts\SaveSystem\ISaveable.cs" />
+    <Compile Include="Assets\Scripts\InteractionSystem\ItemDamage.cs" />
+    <Compile Include="Assets\Scripts\Window System\Menu\MainMenuController.cs" />
+    <Compile Include="Assets\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Basic Motions\Script\HumanBasicMotionsDemo.cs" />
+    <Compile Include="Assets\Scripts\SaveSystem\SaveData.cs" />
+    <Compile Include="Assets\Scripts\InteractionSystem\InteractionModule.cs" />
+    <Compile Include="Assets\Scripts\InteractionSystem\TestInteraction.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Kevin Iglesias\Human Animations\Scripts\SpineProxy.cs" />
     <Compile Include="Assets\Scripts\Window System\HoverTracker.cs" />
     <Compile Include="Assets\Scripts\Window System\BaseWindow.cs" />
-    <Compile Include="Assets\Scripts\PlayerInputActions_Setup.cs" />
-    <Compile Include="Assets\Scripts\InputSystem\ToggleInputActionMap.cs" />
-    <Compile Include="Assets\maanetorn\Farm Game UI - Simple 2D UI\Script\CustomButton.cs" />
-    <Compile Include="Assets\Scripts\InputSystem\InputActions.cs" />
+    <Compile Include="Assets\FinalCharacterController\Input\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\InputSystem\InputManager.cs" />
     <Compile Include="Assets\Scripts\Window System\WindowManager.cs" />
     <Compile Include="Assets\Scripts\Window System\Menu\MenuController.cs" />
-    <Compile Include="Assets\Scripts\FPSController.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\SaveManager.cs" />
+    <Compile Include="Assets\Scripts\InteractionSystem\ItemBalance.cs" />
+    <Compile Include="Assets\Scripts\InteractionSystem\InteractionUI.cs" />
+    <Compile Include="Assets\Scripts\SaveSystem\ISaveStorage.cs" />
+    <Compile Include="Assets\Scripts\UI\AlertController.cs" />
+    <Compile Include="Assets\Scripts\UI\ButtonController.cs" />
+    <Compile Include="Assets\Scripts\InputSystem\ToggleInputActionMap.cs" />
+    <Compile Include="Assets\maanetorn\Farm Game UI - Simple 2D UI\Script\CustomButton.cs" />
+    <Compile Include="Assets\Scripts\Enemy\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\TrackerDeviceManager.cs" />
+    <Compile Include="Assets\Scripts\SaveSystem\SaveableObject.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerUiDataController.cs" />
+    <Compile Include="Assets\Saurabh_Studio\Ex Scene\CreateObj.cs" />
+    <Compile Include="Assets\Scripts\SaveSystem\LoadGame.cs" />
+    <Compile Include="Assets\Scripts\Player\Input\PlayerLocomotionInput.cs" />
+    <Compile Include="Assets\Scripts\GameExit.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
+    <Compile Include="Assets\Scripts\InteractionSystem\ItemResetStamina.cs" />
+    <Compile Include="Assets\Scripts\FPSController.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\maanetorn\Farm Game UI - Simple 2D UI\Third-Party Notices.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Basic Motions\Shaders\HumanBasicMotionsScene.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\maanetorn\Farm Game UI - Simple 2D UI\README.txt" />
+    <None Include="Packages\dev.ameye.linework-lite\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -95,11 +124,15 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\QuickOutline\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\AddressableAssetsData\link.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Melee Animations\Shaders\HumanMeleeAnimationsScene.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
@@ -503,8 +536,23 @@
     <Reference Include="UnityEditor.XRModule">
       <HintPath>E:\Unity Projects\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\PackageCache\com.unity.ext.nunit@d8c07649098d\net40\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Hashing">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>E:\Unity Projects\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -872,14 +920,8 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>E:\Unity Projects\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.004">
-      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.004.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Multiplayer.Center.Editor">
-      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI.Analytics">
       <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\UnityEditor.UI.Analytics.dll</HintPath>
@@ -887,14 +929,104 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InputSystem.ForUI">
-      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+    <Reference Include="Unity.Rendering.LightTransport.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InputSystem">
-      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.MemoryProfiler">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.MemoryProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Splines.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Splines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Editor.Overrides">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Editor.Overrides.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.MemoryProfiler.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.MemoryProfiler.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Localization.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cinemachine.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Cinemachine.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.UnifiedRayTracing.Runtime">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.UnifiedRayTracing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cinemachine">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Profiling.Core">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Profiling.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem.ForUI">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -902,11 +1034,64 @@
     <Reference Include="Unity.Multiplayer.Center.Common">
       <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Multiplayer.Center.Common.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.004">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.004.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.Center.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.MemoryProfiler.Editor.MemoryProfilerModule">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.MemoryProfiler.Editor.MemoryProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Settings.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Splines.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AutoGroupGenerator.Editor">
+      <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\Unity.AutoGroupGenerator.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>E:\Unity Projects\ProjectThirdPerson\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="LineworkLite.csproj">
+      <Project>{265f9e2d-b9fb-ac68-6b41-5678f61f1726}</Project>
+      <Name>LineworkLite</Name>
+    </ProjectReference>
+    <ProjectReference Include="LineworkLite.Editor.csproj">
+      <Project>{7d4e866c-1713-8226-bb52-4f72906297a9}</Project>
+      <Name>LineworkLite.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

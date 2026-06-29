@@ -9,13 +9,12 @@ public class TestInteraction : Interactable, ISaveable
     [SerializeField] private Material defaultMaterial;
     [SerializeField] private Material updateMaterial;
     
-    private const string INTERACT_ACHIEVEMENT_ID = "ACH_FIRST_INTERACTION";
     
     private new IEnumerator Start()
     {
         base.Start();
         onInteract.AddListener(TestInteract);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         if(materialIsUpdate)
         {
             meshRenderer.material = updateMaterial;
@@ -28,6 +27,8 @@ public class TestInteraction : Interactable, ISaveable
 
     private void TestInteract()
     {
+        
+       // ToggleMaterial(true);
         if (!materialIsUpdate)
         {
             ToggleMaterial(true);
@@ -38,13 +39,15 @@ public class TestInteraction : Interactable, ISaveable
             ToggleMaterial(false);
         }
         
-       // SaveManager.Instance.SaveGame();
+        SaveManager.Instance.SaveGame();
     }
 
     private void ToggleMaterial(bool value)
     {
+        
         if (value)
         {
+            Debug.Log("Interaction");
             materialIsUpdate = true;
             meshRenderer.material = updateMaterial;
         }

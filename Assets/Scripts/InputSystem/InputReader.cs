@@ -25,6 +25,8 @@ public class InputReaderNew : MonoBehaviour, InputActions.IGameplayActions, Inpu
     public event Action OnFireCanceled;
     public event Action OnOpenUI;
     public event Action OnInteractEvent;
+    public event Action OnAttackEvent;
+    
 
     // UI Events 
     public event Action OnCloseUI;         
@@ -40,7 +42,15 @@ public class InputReaderNew : MonoBehaviour, InputActions.IGameplayActions, Inpu
     // State
     public bool IsGameplayActive { get; private set; }
     public bool IsUIActive { get; private set; }
-
+    [SerializeField] private bool holdToSprint = true;
+    public Vector2 MovementInput { get; private set; }
+    public Vector2 LookInput { get; private set; }
+    public bool JumpPressed { get; private set; }
+    public bool SprintToggledOn { get; private set; }
+    public bool WalkToggledOn { get; private set; }
+    [SerializeField] private PlayerState _playerState;
+    public bool GatherPressed { get; private set; }
+    public bool AttackPressed { get; private set; }
     //  Unity Lifecycle 
 
     private void Awake()
@@ -64,29 +74,6 @@ public class InputReaderNew : MonoBehaviour, InputActions.IGameplayActions, Inpu
             uiInputModule.actionsAsset = _inputActions.asset;
         }
     }
-
-    private void OnEnable()
-    {
-        if (startInputActionMap == StartInputActionMap.GameplayMap)
-        {
-            EnableGameplay();
-        }
-        else
-        {
-            EnableUI();
-        }
-    }
-
-    private void OnDisable()
-    {
-        DisableAll();
-    }
-
-    private void OnDestroy()
-    {
-        _inputActions?.Dispose();
-    }
-    
     public void EnableGameplay()
     {
         _inputActions.UI.Disable();
@@ -100,6 +87,67 @@ public class InputReaderNew : MonoBehaviour, InputActions.IGameplayActions, Inpu
 
         Debug.Log("[InputReader] Action Map: GAMEPLAY");
     }
+    private void OnEnable()
+    {
+        if (startInputActionMap == StartInputActionMap.GameplayMap)
+        {
+            EnableGameplay();
+            //_inputActions = new InputActions();
+          //  _inputActions.Enable();
+
+            if (PlayerInputManager.Instance?.PlayerControls == null)
+            {
+                Debug.LogError("Player controls is not initialized - cannot enable");
+                return;
+            }
+
+          //  PlayerInputManager.Instance.PlayerControls.Gameplay.Enable();
+           // PlayerInputManager.Instance.PlayerControls.Gameplay.SetCallbacks(this);
+        }
+        else
+        {
+            EnableUI();
+            _inputActions.Gameplay.Disable();
+            _inputActions.Gameplay.RemoveCallbacks(this);
+            
+        }
+    }
+    
+    private void LateUpdate()
+    {
+        JumpPressed = false;
+    }
+    private void Update()
+    {
+        if (startInputActionMap == StartInputActionMap.GameplayMap)
+        {
+            if (MovementInput != Vector2.zero ||
+                _playerState.CurrentPlayerMovementState == PlayerMovementState.Jumping ||
+                _playerState.CurrentPlayerMovementState == PlayerMovementState.Falling)
+            {
+                GatherPressed = false;
+            }
+        }
+    }
+    private void OnDisable()
+    {
+        DisableAll();
+    }
+    public void SetGatherPressedFalse()
+    {
+        GatherPressed = false;
+    }
+
+    public void SetAttackPressedFalse() 
+    { 
+        AttackPressed = false;
+    }
+    private void OnDestroy()
+    {
+        _inputActions?.Dispose();
+    }
+    
+
 
     public void EnableUI()
     {
@@ -135,57 +183,119 @@ public class InputReaderNew : MonoBehaviour, InputActions.IGameplayActions, Inpu
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        OnMoveEvent?.Invoke(context.ReadValue<Vector2>());
+       // OnMoveEvent?.Invoke(context.ReadValue<Vector2>());
+       MovementInput = context.ReadValue<Vector2>();
+
+    }
+
+    public void OnToggleSprint(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            SprintToggledOn = holdToSprint || !SprintToggledOn;
+        }
+        else if (context.canceled)
+        {
+            SprintToggledOn = !holdToSprint && SprintToggledOn;
+        }
+    }
+
+    public void OnMovement(InputAction.CallbackContext context)
+    {
+        //OnMoveEvent?.Invoke(context.ReadValue<Vector2>());
+       MovementInput = context.ReadValue<Vector2>();
+
     }
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        OnLookEvent?.Invoke(context.ReadValue<Vector2>());
-        LookValue = context.ReadValue<Vector2>();
+        //OnLookEvent?.Invoke(context.ReadValue<Vector2>());
+        LookInput = context.ReadValue<Vector2>();
+        
 
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.started)
-            OnJumpStarted?.Invoke();
-        else if (context.canceled)
-            OnJumpCanceled?.Invoke();
+        if (context.performed)
+            JumpPressed = true;
+
+        if (context.canceled)      
+            JumpPressed = false;
     }
 
     public void OnSprint(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.performed)
+        {
+            SprintToggledOn = holdToSprint || !SprintToggledOn;
+        }
+        else if (context.canceled)
+        {
+            SprintToggledOn = !holdToSprint && SprintToggledOn;
+        }
+        /*if (context.started)
             OnSprintStarted?.Invoke();
         else if (context.canceled)
-            OnSprintCanceled?.Invoke();
+            OnSprintCanceled?.Invoke();*/
+    }
+    
+    public void OnToggleWalk(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+            return;
+
+        WalkToggledOn = !WalkToggledOn;
     }
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        if (context.started)
-            OnInteractEvent?.Invoke();
+        /*if (context.started)
+            OnInteractEvent?.Invoke();*/
     }
-
-    public void OnCrouch(InputAction.CallbackContext context)
-    {
-    }
-
+    
     public void OnStartPauseMenu(InputAction.CallbackContext context)
     {
-       // PauseMenuController.Instance.onMenuOpen.Invoke();
+        
+        if (TutorialManager.Instance != null)
+        {
+            if(TutorialManager.Instance.isPopupActive) return;
+        }
+        PauseMenuController.Instance.onMenuOpen.Invoke();
        if (context.started)
        {
            OnOpenUI?.Invoke();
            EnableUI(); 
        }
     }
-    
+
+    public void OnStartAttack(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+            return;
+
+        AttackPressed = true;
+      
+    }
+
+    public void OnInteracting(InputAction.CallbackContext context)
+    {
+        if (context.started)
+            OnInteractEvent?.Invoke();
+    }
+
 
     //  IUIActions Implementation
 
     public void OnStopPauseMenu(InputAction.CallbackContext context)
     {
+        if (TutorialManager.Instance != null)
+        {
+            if(TutorialManager.Instance.isPopupActive) return;
+        }
+        
+        if(startInputActionMap == StartInputActionMap.UIMap) return;
+       
         if (context.started)
         {
             EnableGameplay(); 

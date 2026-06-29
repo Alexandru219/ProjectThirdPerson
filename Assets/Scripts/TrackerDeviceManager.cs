@@ -79,10 +79,8 @@ public class TrackerDeviceManager : MonoBehaviour
                 ? device.description.product.ToLower()
                 : string.Empty;
 
-            bool isPlayStation = deviceName.Contains("dual") ||
-                                 deviceName.Contains("sony") ||
-                                 deviceName.Contains("playstation") ||
-                                 deviceProduct.Contains("dual") ||
+            bool isPlayStation = deviceName.Contains("dual") || deviceName.Contains("sony") ||
+                                 deviceName.Contains("playstation") || deviceProduct.Contains("dual") ||
                                  deviceProduct.Contains("sony");
 
             detectedGamepad = isPlayStation ? GamepadType.PlayStation : GamepadType.Xbox;

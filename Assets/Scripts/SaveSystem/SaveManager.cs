@@ -3,16 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>
-/// Единственная точка входа для gameplay-кода.
-///
-/// Отвечает за:
-///   1. Создание нужного ISaveStorage для текущей платформы.
-///   2. Инжектирование хранилища в каждый SaveableObject.
-///   3. Оркестрацию Save / Load по всей сцене или по отдельным объектам.
-///
-/// Gameplay-код вызывает только SaveManager — никогда ISaveStorage напрямую.
-/// </summary>
 public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance { get; private set; }
@@ -23,9 +13,7 @@ public class SaveManager : MonoBehaviour
     [Header("Alert duration (sec)")]
     [SerializeField] private float _alertDuration = 1.0f;
 
-    
-
-    private ISaveStorage         _storage;
+    private ISaveStorage  _storage;
     private List<SaveableObject> _cachedObjects = new List<SaveableObject>();
 
     
@@ -34,17 +22,15 @@ public class SaveManager : MonoBehaviour
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+       // DontDestroyOnLoad(gameObject);
 
         _storage = SaveStorageFactory.Create();
         RefreshCache(); 
+        
+        
     }
 
-    private void Start()
-    {
-        // Кешируем при старте, включая неактивные объекты
-        //RefreshCache();
-    }
+   
 
 
     public void SaveGame()

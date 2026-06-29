@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Localization; // <- Ai nevoie de acest namespace
 
 public class Interactable : MonoBehaviour
 {
-    public string message = "Interact";
+    // Înlocuim string-ul simplu cu LocalizedString
+    [SerializeField] private LocalizedString messageReference; 
+    
     [SerializeField] private bool interactionEnabled = true;
+    [SerializeField] Outline _outline;
 
     public bool InteractionEnabled
     {
@@ -17,9 +21,7 @@ public class Interactable : MonoBehaviour
     }
 
     [SerializeField, Range(0f, 10f)] public float holdDuration = 0f;
-    
     private float _interactionProgress;
-   // private Outline _outline;
 
     public UnityEvent onInteract;
     public UnityEvent onHoverStarted;
@@ -28,26 +30,32 @@ public class Interactable : MonoBehaviour
     
     protected void Start()
     {
-        /*_outline = GetComponent<Outline>();
+        _outline = GetComponent<Outline>();
         if (_outline)
         {
             onHoverStarted.AddListener(() => _outline.enabled = true);
             onHoverEnded.AddListener(() => _outline.enabled = false);
             _outline.enabled = false;
-        }*/
+        }
+    }
+
+    public string GetLocalizedMessage()
+    {
+        if (messageReference == null || messageReference.IsEmpty)
+            return "Interact"; 
+
+        return messageReference.GetLocalizedString(); 
     }
 
     public virtual void HoverStart()
     {
-        if (!interactionEnabled)
-            return;
+        if (!interactionEnabled) return;
         onHoverStarted.Invoke();
     }
 
     public virtual void HoverEnd()
     {
-        if (!interactionEnabled)
-            return;
+        if (!interactionEnabled) return;
         onHoverEnded.Invoke();
     }
 
@@ -58,6 +66,7 @@ public class Interactable : MonoBehaviour
             onInteract?.Invoke();
         } 
     }
+
     public virtual bool CheckInteractable()
     {
         return true;

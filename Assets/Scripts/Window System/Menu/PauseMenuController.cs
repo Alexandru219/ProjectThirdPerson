@@ -8,8 +8,7 @@ public class PauseMenuController : MenuSystem
 {
     public static PauseMenuController Instance;
     //[SerializeField] private InputReaderNew inputReader;
-
-   
+    public bool isPause;
     [Header("UI Menus")]
     [SerializeField] private GameObject pauseMenu;
    // [SerializeField] private GameObject controlsMenu; 
@@ -43,6 +42,10 @@ public class PauseMenuController : MenuSystem
         base.Start();
     }
 
+    public void LoadScene(string sceneName)
+    {
+        SceneLoader.Instance.LoadScene(sceneName);
+    }
     
 
     private void OnEnable()
@@ -85,6 +88,13 @@ public class PauseMenuController : MenuSystem
 
     public void OpenPauseMenu()
     {
+        if (TutorialManager.Instance != null)
+        {
+            if(TutorialManager.Instance.isPopupActive) return;
+        }
+        
+        InputReaderNew.Instance.EnableUI();
+        isPause = true;
         if(controlsMenu != null) controlsMenu.SetActive(false);
         if(controlsMenu != null) optionsMenu.SetActive(false);
         if(savePopup.activeSelf) savePopup.SetActive(false);
@@ -97,6 +107,12 @@ public class PauseMenuController : MenuSystem
 
     public void ClosePauseMenu()
     {
+        if (TutorialManager.Instance != null)
+        {
+            if(TutorialManager.Instance.isPopupActive) return;
+        }
+        
+        isPause = false;
         pauseMenu.SetActive(false);
         controlsMenu.SetActive(false);
         optionsMenu.SetActive(false);

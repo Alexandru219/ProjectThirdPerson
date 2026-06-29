@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Menu Labels_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 038be2f5d804ee14c83cf998ce1ae3b3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 49634832384
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1451983597568
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1633085255680
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1728354676736
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1876665266176
+    m_Localized: Main Meniu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145587261440
+    m_Localized: Balance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2265598881792
+    m_Localized: Stamina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2336381956096
+    m_Localized: Confirm New Game?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2521438842880
+    m_Localized: If you confirm, all saves will be deleted and the game will start
+      from the beginning.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2707447836672
+    m_Localized: You don't have enough balance (5)!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2843406200832
+    m_Localized: Increase damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2986721374208
+    m_Localized: Increase balance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2988411678720
+    m_Localized: Reset stamina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24834972545024
+    m_Localized: yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25233435619328
+    m_Localized: no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25563611230208
+    m_Localized: options menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25973298262016
+    m_Localized: sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26173391728640
+    m_Localized: quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26453554458624
+    m_Localized: language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26736619646976
+    m_Localized: Main menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27579007856640
+    m_Localized: pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28427368755200
+    m_Localized: confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28619828588544
+    m_Localized: back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28899727077376
+    m_Localized: exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 103909657374720
+    m_Localized: Increase damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120810445959168
+    m_Localized: Interaction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123645183094784
+    m_Localized: Hello! This is the scene where you can test the game's mechanics.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124325939605504
+    m_Localized: ok
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

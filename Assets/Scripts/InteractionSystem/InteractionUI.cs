@@ -2,11 +2,11 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-//using Zenject;
+
 
 public class InteractionUI : MonoBehaviour
 {
-  //  [Inject]
+
     [SerializeField] private InteractionModule _interactionModule;
     [SerializeField] private TMP_Text interactionMessage;
     [SerializeField] private Image interactionProgressImage;

@@ -52,18 +52,27 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Crouch",
+                    "name": "StartPauseMenu",
                     "type": "Button",
-                    "id": "c55097a6-a583-48b3-b895-c52a2031c6dc",
+                    "id": "50f4731a-bef3-4e28-88af-bb43638c2e03",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "StartPauseMenu",
+                    "name": "StartAttack",
                     "type": "Button",
-                    "id": "50f4731a-bef3-4e28-88af-bb43638c2e03",
+                    "id": "2edde802-af11-48ef-85e5-8f63ef0484ae",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interacting",
+                    "type": "Button",
+                    "id": "ebeabc8c-94cf-4ef1-9358-06388a3d31db",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -227,28 +236,6 @@
                 },
                 {
                     "name": "",
-                    "id": "c395a617-8333-41a9-88c9-d4b229a9a287",
-                    "path": "<Gamepad>/leftStickPress",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "701a77f2-bcd3-4144-b9eb-8faa2cb4b531",
-                    "path": "<Keyboard>/leftCtrl",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "a58285d8-64a4-402d-9a81-6add2416b1bd",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
@@ -266,6 +253,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "StartPauseMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b27d61f-7908-429b-8919-6ed16187bb45",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StartAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1911e2cb-3c4d-4ed8-ac0d-886ef4c97e8b",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StartAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a549f7ce-380d-4391-96d0-7c88270f72f6",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interacting",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "602bfb5c-70b2-42b7-bd9e-1cec320acada",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interacting",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
